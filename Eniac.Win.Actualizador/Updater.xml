@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Updater</name>
+    <version>0.0.14.0</version>
+    <fullname>Updater, Version=0.0.14.0, Culture=neutral, PublicKeyToken=null</fullname>
+  </assembly>
+  <members>
+    <member name="T:Bacoe.Eam.Sistemas.Updater.frmDetails">
+      <summary>
+ Permite al usuario hacer una cosulta de los últimos cambios de la aplicación. 
+ Se consulta a un webservice que trae el detalle de los cambios. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[whene]	11/01/2006	Created 
+ </history></member>
+  </members>
+</doc>

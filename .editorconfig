@@ -1,0 +1,16 @@
+﻿[*.vb]
+
+# BC40028: Type of parameter is not CLS-compliant
+dotnet_diagnostic.BC40028.severity = none
+
+# BC40025: Type of member is not CLS-compliant
+dotnet_diagnostic.BC40025.severity = none
+
+# BC40031: Name is not CLS-compliant
+dotnet_diagnostic.BC40031.severity = none
+
+# IDE1006: Estilos de nombres
+dotnet_diagnostic.IDE1006.severity = none
+
+# IDE0037: Usar nombre de miembro inferido
+dotnet_diagnostic.IDE0037.severity = none

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4421DC4F-BA75-475E-AE8C-77A60697FD67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Eniac.Entidades</RootNamespace>
+    <AssemblyName>Eniac.Entidades</AssemblyName>
+    <MyType>Windows</MyType>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Eniac.Entidades.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</WarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Dlls\</OutputPath>
+    <DocumentationFile>Eniac.Entidades.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Parametros|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug-Parametros\</OutputPath>
+    <DocumentationFile>Eniac.Entidades.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="actual = Eniac.Entidades.Usuario.Actual" />
+    <Import Include="Eniac.Entidades.Extensiones" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Runtime.CompilerServices" />
+    <Import Include="System.Text" />
+    <Import Include="System.Web.Script.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actividad.vb" />
+    <Compile Include="Aplicacion.vb" />
+    <Compile Include="Banco.vb" />
+    <Compile Include="Bitacora.vb" />
+    <Compile Include="Buscar.vb" />
+    <Compile Include="CajaNombre.vb" />
+    <Compile Include="Calle.vb" />
+    <Compile Include="Categoria.vb" />
+    <Compile Include="CategoriaFiscal.vb" />
+    <Compile Include="CategoriaProveedor.vb" />
+    <Compile Include="Cliente.vb" />
+    <Compile Include="ClienteAdjunto.vb" />
+    <Compile Include="ContabilidadCentroCosto.vb" />
+    <Compile Include="ContabilidadCuenta.vb" />
+    <Compile Include="CuentaBancariaClase.vb" />
+    <Compile Include="CuentaBanco.vb" />
+    <Compile Include="CuentaDeCaja.vb" />
+    <Compile Include="Empleado.vb" />
+    <Compile Include="EmpleadoObjetivo.vb" />
+    <Compile Include="EmpleadoSucursal.vb" />
+    <Compile Include="Empresa.vb" />
+    <Compile Include="EniacException.vb" />
+    <Compile Include="EniacMail.vb" />
+    <Compile Include="Entidad.vb" />
+    <Compile Include="EstadoCheque.vb" />
+    <Compile Include="EstadoCliente.vb" />
+    <Compile Include="General.vb" />
+    <Compile Include="Grupo.vb" />
+    <Compile Include="IAdjunto.vb" />
+    <Compile Include="Interes.vb" />
+    <Compile Include="InteresDias.vb" />
+    <Compile Include="ListaDePrecios.vb" />
+    <Compile Include="ListConBorrados.vb" />
+    <Compile Include="Localidad.vb" />
+    <Compile Include="MailConfig.vb" />
+    <Compile Include="Marca.vb" />
+    <Compile Include="Moneda.vb" />
+    <Compile Include="MovilRuta.vb" />
+    <Compile Include="MovilRutaListaDePrecios.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer1.vb" />
+    <Compile Include="OperacionesAuditorias.vb" />
+    <Compile Include="OrigenesPorcImpInt.vb" />
+    <Compile Include="Parametro.vb" />
+    <Compile Include="Producto.vb" />
+    <Compile Include="ProductoConcepto.vb" />
+    <Compile Include="ProductoIdentificacion.vb" />
+    <Compile Include="ProductoNroSerie.vb" />
+    <Compile Include="ProductoOferta.vb" />
+    <Compile Include="ProductoProveedor.vb" />
+    <Compile Include="ProductosPublicarEn.vb" />
+    <Compile Include="ProductoWeb.vb" />
+    <Compile Include="Proveedor.vb" />
+    <Compile Include="Publicos.vb" />
+    <Compile Include="Regimen.vb" />
+    <Compile Include="Rubro.vb" />
+    <Compile Include="RubroComisionPorDescuento.vb" />
+    <Compile Include="RubroCompra.vb" />
+    <Compile Include="Sistema.vb" />
+    <Compile Include="StringBuilderExtensions.vb" />
+    <Compile Include="SubRubro.vb" />
+    <Compile Include="SubRubroComisionPorDescuento.vb" />
+    <Compile Include="SubSubRubro.vb" />
+    <Compile Include="Sucursal.vb" />
+    <Compile Include="TipoCliente.vb" />
+    <Compile Include="TipoComprobante.vb" />
+    <Compile Include="TipoComprobanteProducto.vb" />
+    <Compile Include="TipoImpuesto.vb" />
+    <Compile Include="UnidadDeMedida.vb" />
+    <Compile Include="Usuario.vb" />
+    <Compile Include="VentaFormaPago.vb" />
+    <Compile Include="VentasFormasPagoSucursales.vb" />
+    <Compile Include="Version.vb" />
+    <Compile Include="VersionScript.vb" />
+    <Compile Include="VersionScriptEjecucion.vb" />
+    <Compile Include="ZonaGeografica.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

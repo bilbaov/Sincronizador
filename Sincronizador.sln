@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sincronizador", "Eniac.Win.Actualizador\Sincronizador.vbproj", "{D5180462-B586-4099-99BE-BA9B144EE230}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E8D35E49-D930-4D5C-8BED-D858F21BE909}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Debug-Parametros|Any CPU = Debug-Parametros|Any CPU
+		Debug-Parametros|x86 = Debug-Parametros|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug|x86.ActiveCfg = Debug|x86
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug|x86.Build.0 = Debug|x86
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug-Parametros|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug-Parametros|Any CPU.Build.0 = Debug|Any CPU
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug-Parametros|x86.ActiveCfg = Debug|x86
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Debug-Parametros|x86.Build.0 = Debug|x86
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Release|x86.ActiveCfg = Release|x86
+		{D5180462-B586-4099-99BE-BA9B144EE230}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96B4C144-962F-4897-8BA3-E3AFED8547A9}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN2019 - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

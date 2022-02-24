@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="..\packages\Costura.Fody.5.6.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.5.6.0\build\Costura.Fody.props')" />
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5180462-B586-4099-99BE-BA9B144EE230}</ProjectGuid>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\Sincronizador.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Sincronizador</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>My.MyApplication</StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsForms</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccAuxPath>Svn</SccAuxPath>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eniac.Ayudantes">
+      <HintPath>..\Dlls\Eniac.Ayudantes.dll</HintPath>
+    </Reference>
+    <Reference Include="Eniac.Datos">
+      <HintPath>..\Dlls\Eniac.Datos.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Extensions" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Runtime.CompilerServices" />
+    <Import Include="System.Text" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Eniac.Entidades\Actualizador\Actualizador.vb" />
+    <Compile Include="Eniac.Entidades\Actualizador\EmpresaBuscar.vb" />
+    <Compile Include="Eniac.Entidades\Actualizador\EmpresaClienteSucursal.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Aplicacion.vb" />
+    <Compile Include="Eniac.Entidades\ArchivosWeb\BaseArchivosWeb.vb" />
+    <Compile Include="Eniac.Entidades\ArchivosWeb\Serializacion.vb" />
+    <Compile Include="Eniac.Entidades\ArchivosWeb\Sucesos.vb" />
+    <Compile Include="Eniac.Entidades\ArchivosWeb\TipoSuceso.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Bitacora.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Buscar.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Cliente.vb" />
+    <Compile Include="Eniac.Entidades\Comunes\EniacMail.vb" />
+    <Compile Include="Eniac.Entidades\Comunes\Version.vb" />
+    <Compile Include="Eniac.Entidades\Comunes\VersionScript.vb" />
+    <Compile Include="Eniac.Entidades\Comunes\VersionScriptEjecucion.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Empresa.vb" />
+    <Compile Include="Eniac.Entidades\Comunes\EniacException.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Entidad.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\General.vb" />
+    <Compile Include="Eniac.Reglas\Actualizador\Actualizar.vb" />
+    <Compile Include="Eniac.Reglas\Actualizador\Instalar.vb" />
+    <Compile Include="Eniac.Reglas\BackgroundWorkerSIGA.vb" />
+    <Compile Include="Eniac.Reglas\BaseActualizador.vb" />
+    <Compile Include="Eniac.Reglas\Actualizador\Descargar.vb" />
+    <Compile Include="Eniac.Reglas\Actualizador\Buscar.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\General.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\Aplicaciones.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\Clientes.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\Generales.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\Publicos.vb" />
+    <Compile Include="Eniac.Reglas\Comunes\ScriptsAdmin.vb" />
+    <Compile Include="Eniac.Reglas\Comunes\Versiones.vb" />
+    <Compile Include="Eniac.Reglas\Comunes\VersionesScripts.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\Aplicaciones.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\Bitacora.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\ParametrosSucursales.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\Versiones.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\VersionesScripts.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\VersionesScriptsEjecuciones.vb" />
+    <Compile Include="Eniac.Win\ControlesUsuarios\ucBackupBaseDatos.Designer.vb">
+      <DependentUpon>ucBackupBaseDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eniac.Win\ControlesUsuarios\ucBackupBaseDatos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eniac.Win\ControlesUsuarios\ucBaseSistema.Designer.vb">
+      <DependentUpon>ucBaseSistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eniac.Win\ControlesUsuarios\ucBaseSistema.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eniac.Win\ControlesUsuarios\ucRestoreBaseDatos.Designer.vb">
+      <DependentUpon>ucRestoreBaseDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eniac.Win\ControlesUsuarios\ucRestoreBaseDatos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extensions\FormExtension.vb" />
+    <Compile Include="Extensions\NetExceptionHelper.vb" />
+    <Compile Include="Extensions\StringBuilderExtensions.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\MailConfig.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Parametro.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\ParametroSucursal.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Producto.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Publicos.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Sucursales.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\Usuarios.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\Base.vb" />
+    <Compile Include="Eniac.Reglas\Comunes\IEntidad.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\ParametrosCache.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\ParametrosSucursales.vb" />
+    <Compile Include="Eniac.Reglas\ServiciosRest\ISyncRegla.vb" />
+    <Compile Include="Eniac.Reglas\Migracion\Parametros.vb" />
+    <Compile Include="Eniac.Reglas\ServiciosRest\ISyncBase.vb" />
+    <Compile Include="Eniac.Entidades\Migracion\IValidable.vb" />
+    <Compile Include="Eniac.Reglas\ServiciosRest\SyncBaseCollection.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\Comunes.vb" />
+    <Compile Include="Eniac.SqlServer\Migracion\Parametros.vb" />
+    <Compile Include="Extensions\ProcessExtension.vb" />
+    <Compile Include="Extensions\StringExtensions.vb" />
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="main_system.Designer.vb">
+      <DependentUpon>main_system.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main_system.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Eniac.Varios\Publicos.vb" />
+    <Compile Include="Web References\WSActualiza\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Web References\WSActualiza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSActualiza\Version1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSActualiza\VersionCliente.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSActualiza\Versiones.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSActualiza\WSActualizador.disco" />
+    <None Include="App.config" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Eniac.Varios\Functions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Eniac.Win\ControlesUsuarios\ucBackupBaseDatos.resx">
+      <DependentUpon>ucBackupBaseDatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eniac.Win\ControlesUsuarios\ucBaseSistema.resx">
+      <DependentUpon>ucBaseSistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_system.resx">
+      <DependentUpon>main_system.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Web References\WSActualiza\WSActualizador.wsdl" />
+    <None Include="Web References\WSActualiza\WSActualizador.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSActualiza\WSActualizador0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSActualiza\WSActualizador1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSActualiza\WSActualizador2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSActualiza\WSActualizador3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\downloads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://sinergiamovil.com.ar/actualizador/WSActualizador.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSActualiza\</RelPath>
+      <UpdateFromURL>http://sinergiamovil.com.ar/actualizador/WSActualizador.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Actualizador_WSActualiza_WSActualizador</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sincronizador.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BS03.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Costura.Fody.5.6.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.6.0\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.5.6.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.6.0\build\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.5.6.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.5.6.0\build\Costura.Fody.targets')" />
+</Project>
